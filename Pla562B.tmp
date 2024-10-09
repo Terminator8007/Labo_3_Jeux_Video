@@ -113,9 +113,8 @@ player = NodePath("../..")
 script = ExtResource("5_fkad7")
 player = NodePath("../..")
 
-[node name="Attack" type="Node" parent="StateMachine" node_paths=PackedStringArray("player")]
+[node name="Attack" type="Node" parent="StateMachine"]
 script = ExtResource("6_amcmg")
-player = NodePath("../..")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -57)

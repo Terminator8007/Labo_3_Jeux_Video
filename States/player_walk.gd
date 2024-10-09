@@ -7,9 +7,13 @@ var anim_player : AnimationPlayer
 @export var move_speed := 350.0
 
 func manage_input() -> Vector2:	
+	if Input.is_action_just_pressed("attack"):
+		Transitioned.emit(self, "Attack")
+	
 	var dir : Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").normalized()
 
 	return dir
+	
 
 func update(delta : float) -> void:
 	if not anim_player :

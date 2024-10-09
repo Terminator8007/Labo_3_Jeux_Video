@@ -7,3 +7,4 @@ res://player_idle.gd
 res://player_walk.gd
 res://States/player_walk.gd
 res://States/player_idle.gd
+res://player_attack.gd

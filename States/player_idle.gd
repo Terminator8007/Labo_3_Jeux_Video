@@ -9,6 +9,9 @@ func manage_input() -> void:
 	
 	if (dir.length() > 0):
 		Transitioned.emit(self, "Walk")
+	
+	if Input.is_action_just_pressed("attack"):
+		Transitioned.emit(self, "Attack")
 
 func enter():
 	anim_player = player.get_animation_player()	
