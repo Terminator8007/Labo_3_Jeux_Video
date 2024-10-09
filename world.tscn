@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2dyo0ilyiyuv"]
+[gd_scene load_steps=3 format=3 uid="uid://c2dyo0ilyiyuv"]
 
 [ext_resource type="PackedScene" uid="uid://bgjd0mwu7wn4h" path="res://parallaxBackground.tscn" id="1_nqj4b"]
+[ext_resource type="PackedScene" uid="uid://cxyijr3k7hrxt" path="res://Player.tscn" id="2_uo0hs"]
 
 [node name="World" type="Node2D"]
+position = Vector2(898, 15)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_nqj4b")]
+
+[node name="Player" parent="." instance=ExtResource("2_uo0hs")]
+position = Vector2(62, 924)
+scale = Vector2(7, 7)

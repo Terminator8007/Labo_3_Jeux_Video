@@ -1,4 +1,9 @@
+Camera2D
+Node
+CollisionShape2D
+AnimationPlayer
 Sprite2D
+CharacterBody2D
 ParallaxLayer
 Parallax2D
 ParallaxBackground

@@ -1,2 +1,9 @@
 res://parallaxBackground.tscn
 res://world.tscn
+res://Player.tscn
+res://player.gd
+res://state_machine.gd
+res://player_idle.gd
+res://player_walk.gd
+res://States/player_walk.gd
+res://States/player_idle.gd
