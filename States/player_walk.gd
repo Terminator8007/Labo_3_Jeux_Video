@@ -10,7 +10,7 @@ func manage_input() -> Vector2:
 	if Input.is_action_just_pressed("attack"):
 		Transitioned.emit(self, "Attack")
 	
-	var dir : Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").normalized()
+	var dir : Vector2 = Vector2(Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"), 0).normalized()
 
 	return dir
 	

@@ -5,7 +5,7 @@ class_name PlayerIdle
 var anim_player : AnimationPlayer
 
 func manage_input() -> void:	
-	var dir : Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").normalized()
+	var dir : Vector2 = Vector2(Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"), 0).normalized()
 	
 	if (dir.length() > 0):
 		Transitioned.emit(self, "Walk")
