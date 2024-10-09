@@ -14,7 +14,7 @@ func manage_input() -> void:
 		Transitioned.emit(self, "Attack")
 
 func enter():
-	anim_player = player.get_animation_player()	
+	anim_player = player.get_animation_player()
 	
 func update(delta: float) -> void:
 	if not anim_player :

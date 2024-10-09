@@ -1,4 +1,4 @@
-extends Node
+extends BaseState
 class_name PlayerAttack
 
 @export var player : Player
@@ -17,3 +17,8 @@ func physics_update(delta: float) -> void:
 	if not anim_player : return
 		
 	anim_player.play("attack")
+
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+	if (anim_name == "attack"):
+		Transitioned.emit(self, "Walk")
